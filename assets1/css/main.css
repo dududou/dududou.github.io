@@ -1,0 +1,1799 @@
+/* Clearing
+==================================================================================================== */
+#bottom-nav:after,
+ul#footer-menu:after,
+.clear:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+
+
+/* General Page Structure
+-------------------------------------------------------------------------------------- */
+html {
+	height: 100%;
+}
+body {
+	/*background-color: #382c16;*/
+	/*background-color: #f76481;*/
+	/*background-color: #809ba8;*/
+	background-color: #fff;
+	height: 100%;
+	margin: 0;
+	min-height: 560px; /* same as #wrapper height */
+	padding: 0;
+}
+body#splash {
+	cursor: pointer;
+}
+body.fw-09-front,
+body.fw-2010-front,
+body.ss-2010-front,
+body.ss-2011-front,
+body.previous,
+body.brand {
+	min-height: 660px;
+}
+body.ss2010-headwear,
+body.ss2011-headwear {
+	min-height: 662px;
+}
+#starter {
+	color: #382c16;
+	float: left;
+	height: 50%;
+	margin-top: -280px; /* 50% of #wrapper height */
+	width: 100%;
+}
+body.fw-09-front #starter,
+body.fw-2010-front #starter,
+body.ss-2010-front #starter,
+body.ss-2011-front #starter,
+body.previous #starter,
+body.brand #starter {
+	margin-top: -330px; /* 50% of #wrapper height */
+}
+body.new-brand #starter {
+	margin-top: -305px;
+}
+body.full-height #starter {
+	display: none;
+}
+body#home #starter {
+	display: block !important;
+	margin-top: -320px;
+}
+#wrapper {
+	clear: both;
+	height: 560px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 835px;
+}
+body#home #wrapper {
+	height: 600px;
+}
+body.full-height #wrapper {
+	height: auto;
+	padding: 20px 0;
+}
+body.gallery #wrapper {
+	width: 1106px;
+}
+body.fw09 #wrapper,
+body.ss2010 #wrapper {
+	width: 1066px;
+}
+body.ss2011 #wrapper {
+	width: 915px;
+}
+body.fw2010 #wrapper {
+	width: 1136px;
+}
+body.fw-09-front #wrapper,
+body.fw-2010-front #wrapper,
+body.ss-2010-front #wrapper,
+body.ss-2011-front #wrapper,
+body.brand #wrapper {
+	height: 660px;
+	width: 980px;
+}
+body.previous #wrapper {
+	height: 660px;
+	width: 1046px;
+}
+body.fw-09-footwear #wrapper,
+body.fw-2010-footwear #wrapper,
+body.ss2010-footwear #wrapper,
+body.ss2011-footwear #wrapper {
+	width: 935px;
+}
+body.fw09-headwear #wrapper,
+body.fw2010-headwear #wrapper {
+	width: 906px;
+}
+body.ss2010-headwear #wrapper {
+	width: 1106px;
+}
+body.ss2011-headwear #wrapper {
+	width: 947px;
+}
+body.press #wrapper,
+body.holiday #wrapper {
+	width: 965px;
+}
+body.version2 #wrapper {
+	width: 980px;
+}
+body.full-height #wrapper {
+	height: auto;
+}
+body.new-brand #wrapper {
+	height: 610px;
+	width: 1400px;
+}
+body.previous-index #wrapper {
+	height: auto;
+}
+#header {
+	height: 49px;
+	margin: 0;
+	padding: 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+body#home #header {
+	height: 75px;
+}
+#main {
+	height: 480px;
+	overflow: hidden;
+}
+body.fw-09-front #main,
+body.fw-2010-front #main,
+body.ss-2010-front #main,
+body.ss-2011-front #main,
+body.previous #main,
+body.brand #main {
+	height: 580px;
+}
+body.ss2010-headwear #main {
+	height: 482px;
+}
+body.ss2011-headwear #main {
+	height: 482px;
+}
+body.previous-index #main {
+	height: auto;
+}
+body.full-height #main {
+	height: auto;
+}
+#nav {
+	/* background: url(/_assets/images/base/bg-gradient.png) repeat-x top left; */
+	float: left;
+	height: 100%;
+	margin: 0 1px 0 0;
+	width: 114px;
+}
+body.fw-09-front #nav,
+body.fw-2010-front #nav,
+body.ss-2010-front #nav,
+body.ss-2011-front #nav,
+body.previous #nav,
+body.brand #nav {
+	width: 124px;
+}
+#content {
+	background: url(/_assets/images/base/content-bg.gif) repeat-x top left;
+	float: left;
+	height: 400px;
+	padding: 20px;
+	overflow: hidden;
+	width: 640px;
+}
+body#home #content {
+	background: none;
+	height: 450px !important;
+	margin: 0 auto;
+	padding: 0;
+	width: 630px !important;
+}
+body#home #content img {
+	height: 450px;
+	width: 630px;
+}
+body.gallery #content {
+	height: 480px;
+	padding: 0;
+	width: 840px;
+}
+body.fw09 #content,
+body.fw2010 #content,
+body.ss2010 #content,
+body.ss2011 #content {
+	width: 800px;
+}
+body.fw-09-front #content,
+body.fw-2010-front #content,
+body.ss-2010-front #content,
+body.ss-2011-front #content,
+body.brand #content {
+	height: 580px;
+	width: 855px;
+}
+body.new-brand #content {
+	height: 480px;
+	width: 1400px;
+}
+body.brand #content,
+body.new-brand #content {
+	background: none;
+	padding: 0;
+}
+body.previous #content {
+	background: none;
+	height: 580px;
+	position: relative;
+	width: 921px;
+}
+body.previous-index #content {
+	height: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+body.fw09-headwear #content,
+body.fw2010-headwear #content {
+	width: 640px;
+}
+body.ss2010-headwear #content {
+	height: 482px;
+	width: 840px;
+}
+body.ss2011-headwear #content {
+	height: 480px;
+	width: 832px;
+}
+body.footwear #content {
+	height: 480px;
+	padding: 0;
+	width: 720px;
+}
+body.fw-09-footwear #content,
+body.fw-2010-footwear #content,
+body.ss2010-footwear #content,
+body.ss2011-footwear #content {
+	width: 820px;
+}
+body.press #content,
+body.holiday #content {
+	height: 480px;
+	padding: 0;
+	position: relative;
+	width: 850px;
+}
+body.new-press #content {
+	background-image: none;
+	position: relative;
+}
+body.full-height #content {
+	height: auto;
+}
+body.version2 #content {
+	float: none;
+	padding-left: 0;
+	padding-right: 0;
+	width: auto;
+}
+body.holiday #content {
+	background: none;
+	position: static;
+}
+body.stores #content,
+body.press-inquiries #content,
+body.corporate #content {
+	background: none;
+}
+#sidebar {
+	border-left: 1px solid #382c16;
+	float: left;
+	height: 480px;
+	overflow: hidden;
+	width: 150px;
+}
+body.fw2010 #sidebar {
+	width: 220px;
+}
+#bottom {
+	clear: both;
+	line-height: 20px;
+	height: 20px;
+}
+
+
+/* General Styles
+-------------------------------------------------------------------------------------- */
+a img {	border: none; }
+hr {
+	background: none;
+	border: none;
+	height: 0px;
+	clear: both;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	visibility: hidden;
+}
+
+
+/* General Typography
+-------------------------------------------------------------------------------------- */
+body {
+	color: #666666;
+	font: 11px/1.6 Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0 0 15px;
+}
+h1 {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+}
+#content h2 {
+	color: #339999;
+}
+h3 {
+	font-size: 13px;
+	margin: 0;
+}
+ul {
+	padding: 0;
+}
+a {
+	color: #777;
+}
+a:hover {
+	color: #444;
+}
+
+
+/* Splash Page
+-------------------------------------------------------------------------------------- */
+body#splash #logo {
+	bottom: 10%;
+	height: 110px;
+	position: absolute;
+	right: 5%;
+	overflow: hidden;
+	width: 400px;
+	z-index: 5;
+}
+body#splash #logo p {
+	color: #fff;
+	display: none;
+	font-size: 15px;
+	letter-spacing: 0.5em;
+	line-height: 1;
+	margin: 0;
+	padding: 9px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+body#splash #logo div.logowrap {
+	height: 86px;
+	overflow: hidden;
+	position: relative;
+	width: 400px;
+}
+body#splash #logo img {
+	display: block;
+	position: absolute;
+	height: 86px;
+	top: 0;
+}
+body#splash #logo img#eric {
+	left: 0;
+	width: 221px;
+}
+body#splash #logo img#javits {
+	left: 213px;
+	width: 187px;
+}
+body#splash a#enter {
+	display: none;
+}
+body#splash a#skip {
+	bottom: 10px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	position: absolute;
+	right: 10px;
+	text-align: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+
+/* Header
+-------------------------------------------------------------------------------------- */
+a#logo {
+	display: block;
+	float: none;
+	height: 46px;
+	margin: 0 auto !important;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	width: 210px;
+}
+/*
+body.fw-09-front a#logo,
+body.fw-2010-front a#logo,
+body.ss-2010-front a#logo,
+body.ss-2011-front a#logo,
+body.previous a#logo,
+body.brand a#logo {
+	margin-left: 124px;
+}
+*/
+body.new-brand a#logo {
+	margin-left: 0;
+}
+body.version2 a#logo {
+	margin-left: 0;
+}
+body#home a#logo {
+	height: 75px;
+	width: 350px;
+}
+a#logo img {
+	display: block;
+	float: left;
+	height: 46px;
+	width: 210px;
+}
+body#home a#logo img {
+	height: 75px;
+	width: 350px;
+}
+body.ss2011-handbags a#logo img,
+body.ss2011-headwear a#logo img {
+	background: url(/_assets/images/base/logo-blue.png) no-repeat 0 0;
+	padding: 45px 0 0;
+}
+a#logo span {
+	color: #666666;
+	display: none;
+	line-height: 11px;
+	position: absolute;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#cfda {
+	float: left;
+	height: 25px;
+	margin: 0 0 0 40px;
+	padding: 7px 0 0;
+	width: 80px;
+}
+#cfda a,
+#cfda a img {
+	display: block;
+	height: 25px;
+	outline: none;
+	width: 80px;
+}
+#header div.shop {
+	left: 640px;
+	position: absolute;
+	top: 17px;
+}
+#header div.shop a {
+	display: block;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 8px 0 0;
+	outline: none;
+	padding: 7px 0;
+	text-align: center;
+	text-decoration: none;
+}
+#notice {
+	color: #ab8206;
+	float: right;
+	font-size: 11px;
+	height: 54px;
+	line-height: 18px;
+	margin: -10px 20px 0 0;
+	position: relative;
+	text-align: right;
+}
+#header div.one {
+	height: 26px;
+	line-height: 26px;
+	padding: 20px 0 0;
+}
+#header div.two {
+	height: 40px;
+	padding: 14px 0 0;
+	line-height: 18px;
+}
+#header div.three {
+	height: 54px;
+	line-height: 18px;
+}
+#notice a {
+	color: #ab8206;
+	text-decoration: none;
+}
+#notice a:hover {
+	color: #fff;
+}
+
+body.new-brand #header div.shop,
+body.new-brand #header #notice {
+	display: none;
+}
+
+
+/* Nav Menu
+-------------------------------------------------------------------------------------- */
+#nav ul {
+	line-height: 1;
+	list-style: none;
+	margin: 20px 0 0;
+}
+body.collection #nav ul {
+	margin-top: 20px;
+}
+body.fw-09-front #nav ul,
+body.fw-2010-front #nav ul,
+body.ss-2010-front #nav ul,
+body.ss-2011-front #nav ul,
+body.previous #nav ul,
+body.brand #nav ul {
+	margin-bottom: 35px;
+}
+#nav ul li {
+	margin: 0 0 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#nav ul li a {
+	display: block;
+	outline: none;
+	padding: 4px 5px;
+	text-decoration: none;
+}
+#nav ul.home {
+	margin-top: 10px !important;
+}
+#nav ul.shop {
+	margin-bottom: 0 !important;
+}
+#nav ul.seasons {
+	margin: 0 !important;
+}
+#nav ul.seasons li ul {
+	display: none;
+	margin: 1px 0 0;
+}
+#nav ul.stores {
+	margin-top: 0 !important;
+}
+body.spring #nav ul li.spring ul,
+body.fall #nav ul li.fall ul {
+	display: block;
+}
+body.spring #nav ul li.fall,
+body.fall #nav ul li.spring {
+	display: none;
+}
+body.home #nav ul li.home a,
+body.handbags #nav ul li.handbags a,
+body.headwear #nav ul li.headwear a,
+body.footwear #nav ul li.footwear a,
+body.press #nav ul li.press a,
+body.brand #nav ul li.brand a,
+body.new-brand #nav ul li.brand a,
+body.press-inquiries #nav ul li.press-inquiries a,
+body.corporate #nav ul li.corporate a,
+body.stores #nav ul li.stores a,
+body.search #nav ul li.search a,
+body.conditions #nav ul li.conditions a,
+body.privacy #nav ul li.privacy a,
+body.register #nav ul li.register a,
+body.spring #nav ul li.spring a.title,
+body.fall #nav ul li.fall a.title,
+body.previous #nav ul li.previous a,
+body.tradeshows #nav ul li.tradeshows a,
+body.holiday #nav ul li.holiday a {
+	/*background: url(/_assets/images/base/nav-hover.png) no-repeat top left;*/
+
+}
+#nav ul li.holiday a {
+	color: #ff0000 !important;
+}
+body.spring #nav ul li.spring a.title,
+body.fall #nav ul li.fall a.title {
+	font-weight: bold;
+}
+#nav ul li a:hover {
+/*
+	background: url(/_assets/images/base/nav-hover.png) no-repeat top left;
+	color: #fff;
+*/
+}
+
+body.new-brand #nav ul,
+body.new-brand #nav ul.pr li.press {
+	display: none;
+}
+body.new-brand #nav ul.home,
+body.new-brand #nav ul.pr {
+	display: block;
+}
+
+
+/* Shared Column Styles
+-------------------------------------------------------------------------------------- */
+div.column ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.column img {
+	border: none;
+	display: block;
+	outline: none;
+}
+
+
+/* Feature Area
+-------------------------------------------------------------------------------------- */
+#feature {
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	width: 360px;
+}
+body.fw-09-front #feature {
+	width: 480px;
+}
+body.ss-2010-front #feature,
+body.ss-2011-front #feature,
+body.fw-2010-front #feature {
+	width: 460px;
+}
+body.previous #feature {
+	width: 921px;
+}
+body.previous div.feature {
+	float: left;
+	height: 580px;
+	width: 921px;
+}
+body.previous div.toc {
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+body.previous div.panel {
+	/*background: url(/_assets/images/base/bg-gradient.png) repeat-x 0 0;*/
+	float: left;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 460px;
+}
+body.previous-index div.panel {
+	height: auto;
+}
+body.previous div.panel a.view {
+	bottom: 0;
+	display: block;
+	height: 40px;
+	left: 0;
+	position: absolute;
+	width: 460px;
+}
+body.previous div.panel a.view img {
+	display: block;
+	height: 40px;
+	width: 460px;
+}
+body.previous div.left {
+	margin-right: 1px;
+}
+body.previous div.previous-toc {
+	padding: 30px;
+}
+body.previous div.previous-toc h2 {
+	font-size: 24px;
+	margin: 0;
+	opacity: 0.8;
+}
+body.previous div.previous-toc h3 {
+	font-size: 18px;
+	margin: 0 0 20px;
+	opacity: 0.6;
+}
+body.previous div.previous-toc ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	width: 100px;
+}
+body.previous div.previous-toc ul li {
+	margin: 0 0 10px;
+}
+body.previous div.previous-toc ul li a {
+	font-size: 18px;
+	text-decoration: none;
+}
+body.previous div.previous-toc div.comingsoon {
+	display: none;
+	font-size: 18px;
+}
+body.previous div.previous-toc div.comingsoon h4 {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+
+/* Showcase (Rotating Products)
+-------------------------------------------------------------------------------------- */
+#showcase {
+	float: right;
+	height: 100%;
+	width: 360px;
+	overflow: hidden;
+	position: relative;
+}
+#showcase ul li {
+	height: 480px;
+	overflow: hidden;
+	width: 360px;
+}
+#showcase ul li img {
+	height: 480px;
+	width: 360px;
+}
+body.fw-09-front #showcase,
+body.fw-09-front #showcase ul li,
+body.fw-09-front #showcase ul li img {
+	height: 580px;
+	width: 375px;
+}
+body.ss-2010-front #showcase,
+body.ss-2010-front #showcase ul li,
+body.ss-2010-front #showcase ul li img,
+body.fw-2010-front #showcase,
+body.fw-2010-front #showcase ul li,
+body.fw-2010-front #showcase ul li img {
+	height: 580px;
+	width: 394px;
+}
+body.fw-2011-front #showcase,
+body.fw-2011-front #showcase ul li,
+body.fw-2011-front #showcase ul li img {
+	height: 580px;
+	width: 394px;
+}
+body.ss-2010-front #showcase img.zoom {
+	float: right;
+	height: 170%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 170%;
+	z-index: 10;
+}
+body.ss-2010-front #showcase img.zoom2 {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9;
+}
+body.ss-2011-front #showcase {
+	height: 580px;
+	position: relative;
+	width: 855px;
+}
+body.ss-2011-front #showcase div.left-start {
+	background-color: #382c16;
+	height: 580px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 460px;
+}
+body.ss-2011-front #showcase div.left-start img {
+	height: 580px;
+	width: 460px;
+}
+body.ss-2011-front #showcase div.zoom {
+	background-color: #382c16;
+	float: right;
+	height: 580px;
+	overflow: hidden;
+	position: relative;
+	width: 394px;
+}
+body.ss-2011-front #showcase li div.zoom img.front {
+	float: right;
+	height: 986px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 670px;
+	z-index: 10;
+}
+body.ss-2011-front #showcase div.zoom img.bg {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9;
+}
+body.ss-2011-front #showcase ul {
+	height: 580px;
+	left: 0;
+	overflow: hidden;
+	position: absolute !important;
+	top: 0;
+	width: 855px;
+	z-index: 5;
+}
+body.ss-2011-front #showcase li {
+	position: absolute;	
+}
+body.ss-2011-front #showcase li,
+body.ss-2011-front #showcase li img {
+	height: 580px;
+}
+body.ss-2011-front #showcase li img {
+	width: auto;
+}
+body.ss-2011-front #showcase li.left {
+	width: 460px;
+}
+body.ss-2011-front #showcase li.right {
+	width: 855px;
+}
+body.ss-2011-front #showcase li.right img {
+	float: right;
+}
+body.ss-2011-front #showcase li.wide {
+	width: 855px;
+}
+body.ss-2011-front #showcase li.orange {
+	background-color: #ec6638;
+}
+body.ss-2011-front #showcase li.green {
+	background-color: #01b490;
+}
+body.ss-2011-front #showcase li.boxes img {
+	display: none;
+	height: 290px !important;
+	position: absolute;
+	width: 285px !important;
+}
+body.ss-2011-front #showcase li.boxes img.box1 {
+	left: 0;
+	top: 0;
+}
+body.ss-2011-front #showcase li.boxes img.box2 {
+	left: 285px;
+	top: 0;
+}
+body.ss-2011-front #showcase li.boxes img.box3 {
+	left: 570px;
+	top: 0;
+}
+body.ss-2011-front #showcase li.boxes img.box4 {
+	left: 0;
+	top: 290px;
+}
+body.ss-2011-front #showcase li.boxes img.box5 {
+	left: 285px;
+	top: 290px;
+}
+body.ss-2011-front #showcase li.boxes img.box6 {
+	left: 570px;
+	top: 290px;
+}
+
+
+/* Product Gallery
+-------------------------------------------------------------------------------------- */
+ul#product-gallery {
+	list-style: none;
+	margin: 0;
+}
+ul#product-gallery li {
+	float: left;
+	display: block;
+	height: 120px;
+	width: 120px;
+}
+ul#product-gallery li a {
+	display: block;
+	outline: none;
+}
+ul#product-gallery li a img {
+	display: block;
+	opacity: 0.9;
+}
+ul#product-gallery li a:hover img {
+	opacity: 1;
+}
+body.fw09 ul#product-gallery li,
+body.fw2010 ul#product-gallery li,
+body.ss2010 ul#product-gallery li,
+body.ss2011 ul#product-gallery li {
+	height: 160px;
+	width: 160px;
+}
+body.ss2010-headwear ul#product-gallery {
+	background: url(/_assets/images/seasons/ss-2010/headwear/all.jpg) no-repeat 0 0;
+	height: 482px;
+	width: 840px;
+}
+body.ss2011-headwear ul#product-gallery {
+	background: url(/_assets/images/seasons/ss-2011/headwear/all.jpg) no-repeat 0 0;
+	height: 480px;
+	width: 832px;
+}
+body.ss2010-headwear ul#product-gallery li,
+body.ss2011-headwear ul#product-gallery li {
+	height: auto;
+	width: auto;
+}
+body.ss2010-headwear ul#product-gallery li a,
+body.ss2011-headwear ul#product-gallery li a {
+	height: 160px;
+	width: 140px;
+}
+body.ss2010-headwear ul#product-gallery li.row1,
+body.ss2010-headwear ul#product-gallery li.row2,
+body.ss2011-headwear ul#product-gallery li.row1,
+body.ss2011-headwear ul#product-gallery li.row2 {
+	margin-bottom: 1px;
+}
+body.ss2010-headwear ul#product-gallery li a,
+body.ss2011-headwear ul#product-gallery li a {
+	background-color: #fff;
+	opacity: 0.08;
+}
+body.ss2010-headwear ul#product-gallery li a:hover,
+body.ss2011-headwear ul#product-gallery li a:hover {
+	opacity: 0;
+}
+body.ss2010-headwear ul#product-gallery li img,
+body.ss2011-headwear ul#product-gallery li img {
+	display: none;
+}
+
+body.ss2010-headwear ul#product-gallery li a.item01 { width: 132px; }
+body.ss2010-headwear ul#product-gallery li a.item02 { width: 142px; }
+body.ss2010-headwear ul#product-gallery li a.item03 { width: 148px; }
+body.ss2010-headwear ul#product-gallery li a.item04 { width: 134px; }
+body.ss2010-headwear ul#product-gallery li a.item05 { width: 124px; }
+body.ss2010-headwear ul#product-gallery li a.item06 { width: 160px; }
+body.ss2010-headwear ul#product-gallery li a.item07 { width: 155px; }
+body.ss2010-headwear ul#product-gallery li a.item08 { width: 160px; }
+body.ss2010-headwear ul#product-gallery li a.item09 { width: 120px; }
+body.ss2010-headwear ul#product-gallery li a.item10 { width: 140px; }
+body.ss2010-headwear ul#product-gallery li a.item11 { width: 140px; }
+body.ss2010-headwear ul#product-gallery li a.item12 { width: 125px; }
+body.ss2010-headwear ul#product-gallery li a.item13 { width: 135px; }
+body.ss2010-headwear ul#product-gallery li a.item14 { width: 150px; }
+body.ss2010-headwear ul#product-gallery li a.item15 { width: 135px; }
+body.ss2010-headwear ul#product-gallery li a.item16 { width: 170px; }
+body.ss2010-headwear ul#product-gallery li a.item17 { width: 125px; }
+body.ss2010-headwear ul#product-gallery li a.item18 { width: 125px; }
+
+body.ss2011-headwear ul#product-gallery li a.col1 { width: 141px; }
+body.ss2011-headwear ul#product-gallery li a.col2 { width: 141px; }
+body.ss2011-headwear ul#product-gallery li a.col3 { width: 141px; }
+body.ss2011-headwear ul#product-gallery li a.col4 { width: 141px; }
+body.ss2011-headwear ul#product-gallery li a.col5 { width: 138px; }
+body.ss2011-headwear ul#product-gallery li a.col6 { width: 130px; }
+
+ul#product-gallery li div.product-infobox {
+	display: none;
+}
+div.product-infobox {
+	color: #fff;
+	height: 540px !important;
+	padding: 0;
+	width: 960px !important;
+}
+div.product-infobox div.product-main {
+	background-color: #483D28;
+	height: 400px;
+	padding: 20px;
+}
+div.product-infobox img.main {
+	float: left;
+	height: 400px;
+	width: 400px;
+}
+div.product-infobox div.product-content {
+	margin-left: 420px;
+}
+div.product-infobox div.product-content h2 {
+	margin: 0;
+	text-transform: none;
+}
+div.product-infobox div.product-content h3 {
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0 0 15px;
+}
+div.product-infobox div.product-content div.desc,
+div.product-infobox div.product-content div.desc font {
+	font-size: 11px !important;
+}
+div.product-infobox div.product-content a.buy {
+	background: url(/shop/includes/templates/eji_v1.0/images/button.gif) no-repeat 0 0;
+	color: #fff;
+	display: block;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 160px;
+}
+div.product-infobox div.product-content p.availability {
+	font-weight: bold;
+	font-size: 14px;
+}
+div.product-infobox div.product-content p.inactive {
+	font-size: 12px;
+}
+div.product-infobox div.product-colors {
+	background-color: #382C16;
+	clear: both;
+	height: 80px !important;
+	overflow: hidden;
+	padding: 10px 20px;
+	width: 920px !important;
+}
+
+ul#attribute-gallery {
+	list-style: none;
+	margin: 0;
+}
+ul#attribute-gallery li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+ul#attribute-gallery li a,
+ul#attribute-gallery li img {
+	display: block;
+	float: left;
+	height: 80px;
+	width: 80px;
+}
+
+body.showcase #content {
+	position: relative;
+}
+img#showcase-loader {
+	background-color: #000;
+	display: none;
+	left: 0;
+	padding: 190px 350px;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+}
+
+
+/* Footwear
+-------------------------------------------------------------------------------------- */
+body.footwear #content {
+	position: relative;
+}
+body.footwear #content div.special-notice {
+	bottom: 0;
+	color: #382c16;
+	left: 0;
+	padding: 5px 10px;
+	position: absolute;
+	z-index: 5;
+}
+ul#footwear {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 480px !important;
+	width: 720px !important;
+}
+ul#footwear li img {
+	border: none;
+	display: block;
+	height: 480px;
+	outline: none;
+}
+
+
+/* Press
+-------------------------------------------------------------------------------------- */
+#press {
+	margin: 0 auto;
+	width: 760px;
+}
+#press ul {
+	height: 480px;
+	list-style: none;
+	margin: 0;
+	width: 760px;
+}
+#press ul li {
+	display: block;
+	height: 480px;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+}
+#press ul li a {
+	border: 5px solid #000;
+	display: block;
+	float: left;
+	height: 207px;
+	margin: 15px 10px 0;
+	outline: none;
+	width: 160px;
+}
+#press ul li a:hover {
+	border-color: #fff;
+}
+#press ul li a img {
+	display: block;
+	height: 207px;
+	width: 160px;
+}
+body.press span#prevBtn,
+body.press span#nextBtn {
+	display: block;
+	height: 22px;
+	position: absolute;
+	top: 229px;
+	width: 45px;
+}
+body.press span#prevBtn {
+	left: 0;
+}
+body.press span#nextBtn {
+	right: 0;
+}
+body.press span#prevBtn a,
+body.press span#nextBtn a {
+	background-image: url(/_assets/images/base/press-arrows.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 22px;
+	margin: 0 auto;
+	outline: none;
+	width: 11px;
+}
+body.press span#prevBtn a {
+	background-position: 0 0;
+}
+body.press span#prevBtn a:hover {
+	background-position: 0 -22px;
+}
+body.press span#nextBtn a {
+	background-position: -11px 0;
+}
+body.press span#nextBtn a:hover {
+	background-position: -11px -22px;
+}
+
+
+/* Press2
+-------------------------------------------------------------------------------------- */
+body.new-press #main,
+body.new-press #content {
+	height: auto;
+}
+#press2 {
+	margin: 0;
+	padding: 20px 0;
+	width: 980px;
+}
+#press2 a.scroll-left {
+	background: url(/_assets/images/base/scroller-arrows.gif) no-repeat 0 0;
+	border: 5px solid #fff;
+	display: block !important;
+	height: 22px;
+	left: 0px;
+	outline: none;
+	position: absolute;
+	top: 199px;
+	width: 11px;
+}
+#press2 a.scroll-left-faster {
+	background-position: 0 -22px;
+}
+#press2 a.scroll-right {
+	background: url(/_assets/images/base/scroller-arrows.gif) no-repeat -11px 0;
+	border: 5px solid #fff;
+	display: block !important;
+	height: 22px;
+	left: 959px;
+	outline: none;
+	position: absolute;
+	top: 199px;
+	width: 11px;
+}
+#press2 a.scroll-right-faster {
+	background-position: -11px -22px;
+}
+#press2 div.scroll-wrapper {
+	border: 1px solid #99cccc;
+	height: 428px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	width: 900px;
+}
+#press2 div.scrollable-area {
+	height: 428px;
+	position: relative;
+	width: auto;
+}
+#press2 div.scrollable-area a {
+	display: block;
+	float: left;
+	height: 428px;
+	margin: 0;
+	outline: none;
+	width: 330px;
+}
+#press2 div.scrollable-area a img {
+	display: block;
+	height: 428px;
+	width: 330px;
+}
+#press2 a.pause {
+	background: url(/_assets/images/base/scroller-pause.gif) no-repeat 0 0;
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	margin: 10px auto 0;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 40px;
+}
+#press2 a.paused {
+	background-position: 0 -14px;
+}
+
+
+/* Holiday Specials
+-------------------------------------------------------------------------------------- */
+#holiday-specials {
+	margin: 0 auto;
+	width: 610px;
+}
+#holiday-specials div.scroll-wrapper {
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+	width: 610px;
+}
+#holiday-specials div.scrollable-area {
+	height: 480px;
+	position: relative;
+	width: auto;
+}
+#holiday-specials div.scrollable-area div.group {
+	float: left;
+	height: 480px;
+	width: 610px;
+}
+#holiday-specials div.scrollable-area div.group a {
+	border: 5px solid #000;
+	display: block;
+	float: left;
+	height: 205px;
+	margin: 15px 10px 0;
+	outline: none;
+	width: 275px;
+}
+#holiday-specials div.scrollable-area div.group a:hover {
+	border-color: #fff;
+}
+#holiday-specials div.scrollable-area div.group a img {
+	display: block;
+	height: 205px;
+	width: 275px;
+}
+
+/*
+#holiday-specials {
+	margin: 0 auto;
+	width: 610px;
+}
+#holiday-specials ul {
+	height: 480px;
+	list-style: none;
+	margin: 0;
+	width: 610px;
+}
+#holiday-specials ul li {
+	display: block;
+	height: 480px;
+	margin: 0;
+	padding: 0;
+	width: 610px;
+}
+#holiday-specials ul li a {
+	border: 5px solid #000;
+	display: block;
+	float: left;
+	height: 205px;
+	margin: 17px 10px 0;
+	outline: none;
+	width: 275px;
+}
+#holiday-specials ul li a:hover {
+	border-color: #fff;
+}
+#holiday-specials ul li a img {
+	display: block;
+	height: 205px;
+	width: 275px;
+}
+body.holiday span#prevBtn,
+body.holiday span#nextBtn {
+	display: block;
+	height: 22px;
+	position: absolute;
+	top: 229px;
+	width: 45px;
+}
+body.holiday span#prevBtn {
+	left: 10px;
+}
+body.holiday span#nextBtn {
+	right: 10px;
+}
+body.holiday span#prevBtn a,
+body.holiday span#nextBtn a {
+	background-image: url(/_assets/images/base/press-arrows.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 22px;
+	margin: 0 auto;
+	outline: none;
+	width: 11px;
+}
+body.holiday span#prevBtn a {
+	background-position: 0 0;
+}
+body.holiday span#prevBtn a:hover {
+	background-position: 0 -22px;
+}
+body.holiday span#nextBtn a {
+	background-position: -11px 0;
+}
+body.holiday span#nextBtn a:hover {
+	background-position: -11px -22px;
+}
+*/
+
+
+/* Previous Collection - Scrollable
+-------------------------------------------------------------------------------------- */
+div.previous-collection {
+	margin: 0 auto;
+	width: 808px;
+}
+div.previous-collection a.scroll-left,
+div.previous-collection a.scroll-right {
+	background: url(/_assets/images/base/scroller-arrows.gif) no-repeat 0 0;
+	border: 5px solid #382C16;
+	display: block !important;
+	height: 22px;
+	outline: none;
+	position: absolute;
+	top: 274px;
+	width: 11px;
+}
+div.previous-collection a.scroll-left {
+	background-position: 0 0;
+	left: 10px;
+}
+div.previous-collection a.scroll-right {
+	background-position: -11px 0;
+	left: 900px;
+}
+div.previous-collection a.faster {
+	background-position: -11px -22px;
+}
+div.previous-collection div.scrollWrapper {
+	height: 580px;
+	position: relative;
+	overflow: hidden;
+	width: 808px;
+}
+div.previous-collection div.scrollableArea {
+	height: 580px;
+	position: relative;
+	width: auto;
+}
+div.previous-collection div.scrollableArea div.separator {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+div.previous-collection div.scrollableArea div.group {
+	float: left;
+	height: 530px;
+	padding: 25px 0;
+	width: 808px;
+}
+div.previous-collection div.scrollableArea div.col-1 {
+	width: 202px;
+}
+div.previous-collection div.scrollableArea div.col-2 {
+	width: 404px;
+}
+div.previous-collection div.scrollableArea div.col-3 {
+	width: 606px;
+}
+div.previous-collection div.scrollableArea div.group a {
+	border: 5px solid #000;
+	display: block;
+	float: left;
+	height: 210px;
+	margin: 30px 15px 0;
+	outline: none;
+	width: 162px;
+}
+div.previous-collection div.scrollableArea div.group a:hover {
+	border-color: #fff;
+}
+div.previous-collection div.scrollableArea div.group a img {
+	display: block;
+	height: 210px;
+	width: 162px;
+}
+
+
+/* About Brand
+-------------------------------------------------------------------------------------- */
+body.brand #header div.shop,
+body.brand #header #notice {
+	display: none;
+}
+#about {
+	height: 580px;
+	padding: 0 30px;
+	position: relative;
+	text-align: center;
+}
+#about ul.nav {
+	display: inline-block;
+	font-size: 11px;
+	list-style: none;
+	margin: 0 0 10px;
+	padding: 5px 0 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+#about ul.nav li {
+	display: inline;
+	margin: 0 10px;
+}
+#about ul.nav li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 15px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+#about ul.nav li a:hover {
+	background-color: #4c422e;
+	color: #fff;
+}
+#about ul.nav li.ui-tabs-selected a {
+	background-color: #4c422e;
+	color: #AB8206;
+}
+#about .ui-tabs-hide {
+	display: none;
+}
+#about div {
+	clear: both;
+}
+#about div.tab-content {
+	text-align: left;
+}
+#about h2 {
+	height: 0;
+	margin: 0;
+	overflow: hidden;
+	text-transform: none;
+}
+#about p {
+	letter-spacing: 1px;
+	margin: 0 0 11px;
+}
+#about-download {
+	bottom: 0;
+	font-size: 10px;
+	height: 12px;
+	left: 0;
+	line-height: 12px;
+	position: absolute;
+	text-align: center;
+	width: 855px;
+}
+#about-download a {
+	color: #fff;
+}
+
+#new-about a {
+	display: block;
+	float: left;
+	height: 480px;
+	outline: none;
+	width: 350px;
+}
+#new-about a img {
+	display: block;
+	width: 350px;
+}
+
+
+/* Corporate Showrooms
+-------------------------------------------------------------------------------------- */
+body.corporate hr {
+	padding: 10px 0;
+}
+body.corporate div.first {
+	margin-left: -1px;
+	padding-left: 1px;
+}
+div.showroom {
+	float: left;
+	width: 25%;
+}
+div.showroom strong {
+	padding-right: 5px;
+}
+
+
+/* Public Relations
+-------------------------------------------------------------------------------------- */
+body.press-inquiries #content {
+	font-size: 12px;
+}
+body.press-inquiries hr {
+	padding: 10px 0;
+}
+body.press-inquiries div.first {
+	margin-left: -1px;
+	padding-left: 1px;
+}
+div.contact-box {
+	float: left;
+	padding: 15px 0;
+	width: 50%;
+}
+div.contact-box strong {
+	padding-right: 5px;
+}
+
+
+/* Stores
+-------------------------------------------------------------------------------------- */
+body.stores #content {
+	position: relative;
+}
+div.stores {
+	font-size: 12px;
+	float: left;
+	width: 49%;
+}
+#usa-stores {
+	float: right;
+}
+div.stores h3 {
+	border-bottom: 1px solid #999;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	text-transform: uppercase;
+}
+div.stores ul {
+	list-style: none;
+	margin: 0;
+}
+div.stores ul li {
+	margin: 0 0 5px;
+}
+div.stores ul li h4 {
+	font-size: 12px;
+	margin: 0;
+	text-transform: uppercase;
+}
+div.stores ul li p {
+	font-size: 11px;
+	margin: 0;
+}
+div.stores ul li a {
+	font-weight: bold;
+	text-decoration: none;
+}
+a#store-index-link {
+	bottom: 20px;
+	color: #fff;
+	left: 40px;
+	position: absolute;
+	text-decoration: none;
+}
+
+
+/* Tradeshows
+-------------------------------------------------------------------------------------- */
+body.tradeshows #content {
+	background: none;
+	font-size: 12px;
+	text-align: center;
+}
+div.tradeshow {
+	padding: 15px 0;
+}
+
+
+/* Bottom
+-------------------------------------------------------------------------------------- */
+#bottom {
+	padding: 0 0 0 114px;
+}
+body.fw-09-front #bottom,
+body.fw-2010-front #bottom,
+body.ss-2010-front #bottom,
+body.ss-2011-front #bottom,
+body.previous #bottom,
+body.brand #bottom {
+	padding-left: 124px;
+}
+body.new-brand #bottom {
+	padding-top: 20px;
+}
+body.new-brand #bottom ul.legal {
+	display: none;
+}
+#bottom p {
+	float: left;
+	margin: 0;
+}
+#bottom ul {
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+#bottom ul li {
+	float: left;
+	margin-left: 10px;
+}
+
+#bottom-nav {
+	clear: both;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+}
+body#home #bottom-nav {
+	height: auto;
+	text-align: right;
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 630px;
+}
+body#home #bottom-nav a {
+	font-size: 12px;
+	line-height: 14px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+}
+body.new-brand #bottom-nav {
+	margin: 0 auto;
+	width: 980px;
+}
+#bottom-nav ul#footer-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0 58px 0 0;
+}
+body#home #bottom-nav ul#footer-menu {
+	display: none;
+}
+#bottom-nav ul li {
+	display: block;
+	float: left;
+	line-height: 18px;
+	margin: 0;
+	padding: 0 35px 5px;
+	text-transform: uppercase;
+}
+#bottom-nav ul li.parent {
+	position: relative;
+}
+#bottom-nav ul li a {
+	text-decoration: none;
+}
+#bottom-nav ul li:hover a {
+	color: #444;
+}
+#bottom-nav ul li ul {
+	display: none;
+	left: 35px;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	text-align: left;
+	top: 13px;
+	width: 100%;
+	z-index: 3;
+}
+#bottom-nav ul li ul#footer-custserv {
+	width: 500px;
+}
+#bottom-nav ul li ul#footer-account {
+	width: 300px;
+}
+#bottom-nav ul li ul#footer-corporate {
+	left: -350px;
+	right: 58px;
+	width: 700px;
+}
+#bottom-nav ul li ul li {
+	font-size: 11px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	text-transform: none;
+}
+#bottom-nav ul li ul li a {
+	text-decoration: none;
+}
+
+#social {
+	right: 0;
+	position: absolute;
+	top: 20px;
+}
+#social a {
+	display: block;
+	float: right;
+	height: 24px;
+	margin: 0 0 0 5px;
+	overflow: hidden;
+	width: 24px;
+}

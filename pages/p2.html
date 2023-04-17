@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Slideshow with Captions</title>
+  <!--additional meta tags go here...-->
+  
+	<link rel="stylesheet" href="css/html5reset.css" />
+    
+    <style>
+		body {
+	font:normal 85%/145% cambria, calibri, Helvetica, sans-serif;
+}
+
+		
+		#container{
+	width: 960px;
+	margin: auto ;
+	border: clear;	
+
+}
+
+.line{
+	width: 960px;
+	height: 0px;
+	border-bottom: 1px solid #b7b7b7;
+}	
+
+header {
+	border: clear;
+	margin-bottom: 30px;
+	overflow: auto;
+}
+
+#titlepic {
+	margin-top: 30px;
+	margin-bottom:0px;
+	border: clear;
+	text-align:right;
+}
+
+
+/**********/
+nav {
+	overflow: auto;
+	border: clear;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color:#252525;
+}
+	
+ul{
+	list-style: none;
+}
+
+nav li:hover ul{
+	left: auto;
+}
+	
+.artistmenu {
+	float: left;
+	font-size: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.submenu{
+	float: left;
+	/*font-size: 25px;*/
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.artistmenu ul {
+	position: absolute;
+	width: 200px;
+	left: -998px;
+}
+
+.ambs {
+	float: left;
+	width: 40px;
+}
+
+
+
+#content{
+	margin: 0px auto;
+	
+}
+#head{
+	float: left;
+	width:640px;
+	font-size:36px;
+	text-align:left;
+	margin-top:20px;
+}
+
+.pframe {
+	float: left;
+	width: 300px;
+	margin-right:20px;
+	margin-top:30px;
+}
+
+.pf{
+	float: right;
+	width: 300px;
+	margin-top:20px;
+}
+.bio{
+
+	float: left;
+	font-size:24px;
+	font-family:calibri;
+
+}
+.pimg {
+	text-align: right;
+	padding: 0px;
+	margin-left:20px;
+
+}
+.pim {
+	text-align: left;
+	padding: 0px;
+	
+}
+
+.pnote {
+	margin-top:20px;
+	font-size: 14px;
+	font-family:calibri;
+
+	
+}
+
+#bfoot {
+	margin-top: 20px;
+	text-align: center;
+	border: clear;
+	color:#b7b7b7;
+}
+
+.copy{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pn {
+	font-size: 36px;
+	color: #7d7d7d;
+	font-family: cambria;
+	line-height: 180%;
+	width:640px;
+	font-weight:bold;
+	
+}
+
+section {
+	margin-top:0px;
+	border: 1px solid #555555;
+	padding: 0px;
+}
+
+	
+figure{
+	float: left;
+	border: 1px solid #555555;
+}
+	
+.clearMe {
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+		#holder { 
+			position: relative; 
+			background: url(assets/bg.jpg) top left no-repeat; 
+			margin: 30px 0px 80px; 
+			width: 960px; 
+			height: 640px; 
+			text-align : center;
+		}
+		img#lr { display: block; position: absolute; top: 0px; left: 60px; }
+		img#back {position: absolute; top: 280px; left: 10px; z-index: 50; cursor: pointer;}
+		img#next {position: absolute; top:280px; left: 920px; z-index: 150; cursor: pointer;}
+		div#msg {
+			position: absolute;
+			margin: 560px 0px 0;
+			padding: 10px;
+			width: 940px;
+			height: 20px;
+			color: #fff;
+			font-size: 21px;
+			background: #000;
+			background: rgba(0, 0, 0, 0.45);
+			/*border: solid 1px #443d23;*/	
+		}
+		<!--#close {display: block; width: 30px; margin-left: 660px; cursor: pointer;}-->
+		
+		ul#thumbs { position: absolute; top: 630px; left: 12px; float: left;}
+		ul#thumbs li { display: block; list-style: none; float: left; margin: 0 5px 0 0; }
+		ul#thumbs li img:hover { cursor: pointer; }
+		<!--#footer {clear: left; margin-top: inherit; font-size: .85em;}-->
+		.selected {
+			border: solid 2px #fff;
+			-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+			box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+		}
+		
+		#caption{
+		font-size: 14px;
+	font-family:calibri;	
+			
+		}
+		
+		#box{
+			position: absolute;
+			margin:620px 0px 0px;
+			padding: 10px;
+			width: 940px;
+			height: 50px;
+			color: #fff;
+			font-size: 21px;
+			background: #000;
+			background: #7d7d7d;
+			/*border: solid 1px #443d23;*/	
+			
+		}
+	</style>
+    
+    <script src="js/jquery.js" type="text/javascript"></script>
+   
+</head>
+<body>
+	<!--Content goes here-->
+    <div id="container">
+    
+    <header>
+    <div id="titlepic"><a href="../mw.html"><img src="assets/logo.png"/> </a></div>
+
+    
+    
+    <nav>
+      <ul>
+        <li class="artistmenu"><a href="../mw.html">home.</a>
+         
+        </li>
+        <li class="ambs">&nbsp</li>
+        
+        <li class="artistmenu"><a href="ab.html">about. </a>
+         
+        </li>
+        <li class="ambs">&nbsp</li>
+        
+        
+        <li class="artistmenu">artwork.
+         
+        </li>
+        <li class="ambs">&nbsp</li>
+        
+         <li class="artistmenu"><a href="contact.html">contact.</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="line"> </div>
+     	<nav>
+      		<ul>
+    			<!--<li class="submenu"><a>ALL</a>
+    			</li>
+        		<li class="ambs">&nbsp</li>-->
+        		<li class="submenu"><a href="v.html">VECTOR ART</a>
+        		</li>
+        		<li class="ambs">&nbsp</li>
+        		<li class="submenu"><a href="t.html">TYPOGRAPHY</a>
+    			</li>
+        		<li class="ambs">&nbsp</li>
+        		<li class="submenu"><a href="p1.html">PHOTOGRAPHY</a>
+        		</li>
+        		<li class="ambs">&nbsp</li>
+        		<li class="submenu"><a href="a.html">WEB RE-DESIGN</a>
+    			</li>
+        		<li class="ambs">&nbsp</li>
+        		<li class="submenu">PAINTING
+        		</li>
+    		</ul>
+    	</nav>
+    
+	<div class="line"> </div>
+  </header>
+  
+  
+   <div id="content">
+  
+  	<div class="pn">Painting</div> 
+    
+    
+    	<!--
+        <h1>Excerpts form <span>The Birds of North America</span> (1827-1839)</h1>
+        <h2>by John James Audubon (April 26, 1785 – January 27, 1851) </h2>
+       -->
+    	<div id="holder">
+            
+            <img src="assets/images/21.jpg" id="lr" />
+            
+            <div id="msg">
+            	<!--<img src="assets/close.png" id="close" />-->
+                <p id="caption">Chin</p>
+            
+            </div>
+            <div id="box">
+             </div>
+            <ul id="thumbs">
+                <li><img src="assets/thumbs/21.jpg" id="1" alt="Chin" class="selected" /></li>
+                <li><img src="assets/thumbs/22.jpg" id="2" alt="Hawaii Sunset" /></li>
+                <li><img src="assets/thumbs/23.jpg" id="3" alt="Spring" /></li>
+                <li><img src="assets/thumbs/24.jpg" id="4" alt="Flower" /></li>
+              
+                
+            </ul><!--close thumbs-->
+             
+              
+             <img src="assets/back.png" id="back" />
+            <img src="assets/next.png" id="next" />
+        
+        
+      
+            	
+    
+        
+          
+          </div><!--close holder-->
+    	<!--<div id="footer">copyright My Favorite Birds, 2026</div>-->
+        
+         <p class="clearMe">clear</p> 
+     </div>
+      
+       
+       <!--end of content-->    
+          <div id="bfoot">
+  			<div class="line"> </div>
+    		<div class="copy">Copyright 2012. Diane Song.</div>
+ 		 </div>
+        
+        
+        
+    </div><!--close container-->
+	
+	
+<script type="text/javascript">
+
+	$(function(){
+		var count = 1;
+		var total = $('ul#thumbs li').length; 
+		
+		$('ul#thumbs li img').mousedown(function(){
+			var tempId = $(this).attr('id');
+			count = Number(tempId);			
+			var path = $(this).attr('src');
+			var cap = $(this).attr('alt');
+			swapImage(path, cap);
+		});		
+		
+		$('#back').mousedown(function(){
+			count --;
+			if (count < 1){
+				count = total;	
+			}
+			var path = $('#' + count).attr('src');
+			var cap = $('#' + count).attr('alt');
+			swapImage(path, cap);
+		});
+		
+		$('#next').mousedown(function(){
+			count ++;
+			if (count > total){
+				count = 1;	
+			}			
+			var path = $('#' + count).attr('src');
+			var cap = $('#' + count).attr('alt');
+			swapImage(path, cap);
+		});
+		
+		$('#close').mousedown(function(){
+			$('#msg').hide();
+		});
+		
+		function swapImage(path, cap){
+			//hide the enlargement and the caption
+			$('#lr').hide();
+			
+			//rip out the thumb folder path and rebuild it to point to the enlargement
+			var tempStr = 'assets/images/' + path.substr(14);
+			
+			//reassign the image source with the correct path to the large image
+			$('#lr').attr('src', tempStr);
+			
+			//grap the value of the alt to assign the correct alt and caption name
+			$('img#lr').attr('alt', cap);
+			$('#caption').html(cap);
+			
+			//everything is ready so TA-DA! Fade in the pretty picture and caption
+			$('#lr').fadeIn('slow');
+			$('#msg').fadeIn('slow');
+			
+			//toggle the thumbnails so the right one is highlighted
+			toggleSelected($('#' + count));
+		}
+		
+		//helper function to highlight the correct thumbnail
+		function toggleSelected(me){
+			$('*').removeClass('selected');//blow torch * wildcard selector!
+			$(me).addClass('selected');
+		}
+		
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.vegas-loading {
+	background: transparent url(assets1/images/home/splash-loading.gif) no-repeat center center;
+	height: 16px;
+	left: 50%;
+	margin: -8px 0 0 -8px;
+	position: absolute;
+	top: 50%;
+	width: 16px;
+	z-index: 0;
+}
+.vegas-overlay {
+	display: none;
+}
+.vegas-background {
+	image-rendering: optimizeQuality;
+	-ms-interpolation-mode: bicubic;
+	z-index:-2;
+}

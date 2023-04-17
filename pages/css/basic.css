@@ -1,0 +1,43 @@
+/*Basic CSS styles*/
+
+body{
+	font: normal 85%/135% Arial;
+	color: #555;
+	background-color: #ffffff;
+}
+			
+h1, h2, h3 { color: #000000; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.2em; }
+h3 { font-variant: small-caps; font-size: .90em; }
+			
+a { color: #036; }
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: underline;}
+a:active{text-decoration: underline;}
+
+img {border: none;}
+			
+p {
+	width: 450px; 
+	margin: 5px 0;
+}
+			
+strong {font-weight: bold; color: #000;}
+			
+hr {
+	color: #fff; 
+	border-top: dotted 1px #555; 
+	width: 600px; 
+	margin-left: 0; 
+
+}
+			
+ul {width: 450px;}
+ul li {
+	list-style: square outside;
+}
+			
+
+			
